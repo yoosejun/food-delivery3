@@ -34,8 +34,6 @@ www.msaez.io/#/storming/Q8eftQC5maXPCTCtN9vbXkjAgIl2/d3441e0dfde982ce5847c722ab3
 ![image](https://user-images.githubusercontent.com/51141885/203246709-db78cce0-e1e0-4403-b104-72fc1bd5af4f.png)
 ![image](https://user-images.githubusercontent.com/51141885/203246860-8654c8a3-7826-453c-9046-8aaf2754e657.png)
 
-## CQRS
-
 ## Request  / Response
 ![image](https://user-images.githubusercontent.com/51141885/203247652-e01cdc55-ca84-4148-b59f-785268d5970e.png)
 ![image](https://user-images.githubusercontent.com/51141885/203247842-f172bf71-a467-4ccc-be77-7108d1ccba8f.png)
