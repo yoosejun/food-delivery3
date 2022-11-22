@@ -74,16 +74,6 @@ public class Delivery  {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-
-        fooddelivery.external.Delivery delivery = new fooddelivery.external.Delivery();
-        // mappings goes here
-        DeliveryApplication.applicationContext.getBean(fooddelivery.external.DeliveryService.class)
-            .deliveryConfirm(delivery);
-
-
-        Wrapped wrapped = new Wrapped(this);
-        wrapped.publishAfterCommit();
-
     }
 
     public static DeliveryRepository repository(){

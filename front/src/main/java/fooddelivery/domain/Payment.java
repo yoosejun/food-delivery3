@@ -1,7 +1,6 @@
 package fooddelivery.domain;
 
 import fooddelivery.domain.Paid;
-import fooddelivery.domain.결제승인됨;
 import fooddelivery.FrontApplication;
 import javax.persistence.*;
 import java.util.List;
@@ -42,14 +41,6 @@ public class Payment  {
 
         Paid paid = new Paid(this);
         paid.publishAfterCommit();
-
-    }
-    @PrePersist
-    public void onPrePersist(){
-
-
-        결제승인됨 결제승인됨 = new 결제승인됨(this);
-        결제승인됨.publishAfterCommit();
 
     }
 

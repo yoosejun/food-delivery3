@@ -1,11 +1,10 @@
 package fooddelivery.domain;
 
-import fooddelivery.domain.배달시작됨;
+import fooddelivery.domain.DeliveryStarted;
 import fooddelivery.domain.Cooked;
 import fooddelivery.domain.Accepted;
 import fooddelivery.domain.Rejected;
 import fooddelivery.domain.CookStarted;
-import fooddelivery.domain.쿠폰발행됨;
 import fooddelivery.StoreApplication;
 import javax.persistence.*;
 import java.util.List;
@@ -62,8 +61,8 @@ public class OrderManage  {
     public void onPostPersist(){
 
 
-        배달시작됨 배달시작됨 = new 배달시작됨(this);
-        배달시작됨.publishAfterCommit();
+        DeliveryStarted DeliveryStarted = new DeliveryStarted();
+        DeliveryStarted.publishAfterCommit();
 
 
 
@@ -84,14 +83,6 @@ public class OrderManage  {
 
         CookStarted cookStarted = new CookStarted(this);
         cookStarted.publishAfterCommit();
-
-    }
-    @PrePersist
-    public void onPrePersist(){
-
-
-        쿠폰발행됨 쿠폰발행됨 = new 쿠폰발행됨(this);
-        쿠폰발행됨.publishAfterCommit();
 
     }
     @PreUpdate
