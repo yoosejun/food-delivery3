@@ -51,16 +51,13 @@ public class Log  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(deliveryStarted.get???()).ifPresent(log->{
+        repository().findById(deliveryStarted.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
 
         
     }
@@ -72,17 +69,13 @@ public class Log  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(delivered.get???()).ifPresent(log->{
+        repository().findById(delivered.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
-
         
     }
     public static void alertViaKakao(Rejected rejected){
@@ -92,17 +85,14 @@ public class Log  {
         repository().save(log);
 
         */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(rejected.get???()).ifPresent(log->{
+      
+        repository().findById(rejected.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
 
         
     }
@@ -113,18 +103,15 @@ public class Log  {
         repository().save(log);
 
         */
-
-        /** Example 2:  finding and process
         
-        repository().findById(accepted.get???()).ifPresent(log->{
+        repository().findById(accepted.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
-
+  
         
     }
     public static void alertViaKakao(Cooked cooked){
@@ -135,17 +122,13 @@ public class Log  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(cooked.get???()).ifPresent(log->{
+        repository().findById(cooked.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
-
         
     }
     public static void alertViaKakao(Paid paid){
@@ -155,18 +138,15 @@ public class Log  {
         repository().save(log);
 
         */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(paid.get???()).ifPresent(log->{
+  
+        repository().findById(paid.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
-
+  
         
     }
     public static void alertViaKakao(Wrapped wrapped){
@@ -177,16 +157,13 @@ public class Log  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(wrapped.get???()).ifPresent(log->{
+        repository().findById(wrapped.getId()).ifPresent(log->{
             
-            log // do something
+//            log // do something
             repository().save(log);
 
 
          });
-        */
 
         
     }

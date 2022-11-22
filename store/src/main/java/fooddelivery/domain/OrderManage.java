@@ -113,17 +113,13 @@ public class OrderManage  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(paid.get???()).ifPresent(orderManage->{
+        repository().findById(paid.getId()).ifPresent(orderManage->{
             
-            orderManage // do something
+            //orderManage // do something
             repository().save(orderManage);
 
 
          });
-        */
-
         
     }
     public static void alertOrderCancel(OrderCanceled orderCanceled){
@@ -134,16 +130,13 @@ public class OrderManage  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(orderCanceled.get???()).ifPresent(orderManage->{
+        repository().findById(orderCanceled.getId()).ifPresent(orderManage->{
             
-            orderManage // do something
+            //orderManage // do something
             repository().save(orderManage);
 
 
          });
-        */
 
         
     }

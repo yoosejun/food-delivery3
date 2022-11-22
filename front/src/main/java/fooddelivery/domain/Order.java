@@ -121,18 +121,15 @@ public class Order  {
         repository().save(order);
 
         */
-
-        /** Example 2:  finding and process
         
-        repository().findById(accepted.get???()).ifPresent(order->{
+        repository().findById(accepted.getId()).ifPresent(order->{
             
-            order // do something
+//            order // do something
             repository().save(order);
 
 
          });
-        */
-
+  
         
     }
     public static void updateStatus(Rejected rejected){
@@ -143,17 +140,14 @@ public class Order  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(rejected.get???()).ifPresent(order->{
+        repository().findById(rejected.getId()).ifPresent(order->{
             
-            order // do something
+//            order // do something
             repository().save(order);
 
 
          });
-        */
-
+  
         
     }
     public static void updateStatus(Cooked cooked){
@@ -164,17 +158,14 @@ public class Order  {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(cooked.get???()).ifPresent(order->{
+        repository().findById(cooked.getId()).ifPresent(order->{
             
-            order // do something
+//            order // do something
             repository().save(order);
 
 
          });
-        */
-
+  
         
     }
     public static void updateStatus(CookStarted cookStarted){
@@ -185,17 +176,15 @@ public class Order  {
 
         */
 
-        /** Example 2:  finding and process
         
-        repository().findById(cookStarted.get???()).ifPresent(order->{
+        repository().findById(cookStarted.getId()).ifPresent(order->{
             
-            order // do something
+//            order // do something
             repository().save(order);
 
 
          });
-        */
-
+  
         
     }
     public static void orderCancel(Rejected rejected){
@@ -205,18 +194,15 @@ public class Order  {
         repository().save(order);
 
         */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(rejected.get???()).ifPresent(order->{
+    
+        repository().findById(rejected.getId()).ifPresent(order->{
             
-            order // do something
+//            order // do something
             repository().save(order);
 
 
          });
-        */
-
+  
         
     }
 
