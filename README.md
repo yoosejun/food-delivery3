@@ -36,6 +36,56 @@ www.msaez.io/#/storming/Q8eftQC5maXPCTCtN9vbXkjAgIl2/d3441e0dfde982ce5847c722ab3
 
 ## CQRS
 
+## Request  / Response
+![image](https://user-images.githubusercontent.com/51141885/203247652-e01cdc55-ca84-4148-b59f-785268d5970e.png)
+![image](https://user-images.githubusercontent.com/51141885/203247842-f172bf71-a467-4ccc-be77-7108d1ccba8f.png)
+
+## Circuit Breaker
+![image](https://user-images.githubusercontent.com/51141885/203248162-fb1512a4-2c14-49c4-b17f-459a17ecf9eb.png)
+
+## Gateway / Ingress
+```
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: front
+          uri: http://front:8080
+          predicates:
+            - Path=/주문/**, /orders/**, /payments/**, /메뉴판/**, /통합주문상태/**
+        - id: store
+          uri: http://store:8080
+          predicates:
+            - Path=/주문관리/**, /orderManages/**, /주문상세보기/**
+        - id: customer
+          uri: http://customer:8080
+          predicates:
+            - Path=/logs/**, /orderStatuses/**
+        - id: delivery
+          uri: http://delivery:8080
+          predicates:
+            - Path=/deliveries/**, 
+        - id: frontend
+          uri: http://frontend:8080
+          predicates:
+            - Path=/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080
+
+```
+
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
