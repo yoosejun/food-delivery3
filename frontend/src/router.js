@@ -23,6 +23,8 @@ import OrderManageDetail from "./components/listers/OrderManageDetail"
 
 import 주문상세보기View from "./components/주문상세보기View"
 import 주문상세보기ViewDetail from "./components/주문상세보기ViewDetail"
+import OrderStatusView from "./components/OrderStatusView"
+import OrderStatusViewDetail from "./components/OrderStatusViewDetail"
 import LogManager from "./components/listers/LogCards"
 import LogDetail from "./components/listers/LogDetail"
 
@@ -31,6 +33,8 @@ import OrderStatusViewDetail from "./components/OrderStatusViewDetail"
 import DeliveryManager from "./components/listers/DeliveryCards"
 import DeliveryDetail from "./components/listers/DeliveryDetail"
 
+import DeliveryStatusView from "./components/DeliveryStatusView"
+import DeliveryStatusViewDetail from "./components/DeliveryStatusViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -119,6 +123,16 @@ export default new Router({
                 component: 주문상세보기ViewDetail
             },
             {
+                path: '/orderStatuses',
+                name: 'OrderStatusView',
+                component: OrderStatusView
+            },
+            {
+                path: '/orderStatuses/:id',
+                name: 'OrderStatusViewDetail',
+                component: OrderStatusViewDetail
+            },
+            {
                 path: '/logs',
                 name: 'LogManager',
                 component: LogManager
@@ -150,6 +164,16 @@ export default new Router({
                 component: DeliveryDetail
             },
 
+            {
+                path: '/deliveryStatuses',
+                name: 'DeliveryStatusView',
+                component: DeliveryStatusView
+            },
+            {
+                path: '/deliveryStatuses/:id',
+                name: 'DeliveryStatusViewDetail',
+                component: DeliveryStatusViewDetail
+            },
 
 
     ]
