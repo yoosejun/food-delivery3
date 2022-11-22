@@ -29,6 +29,14 @@ www.msaez.io/#/storming/Q8eftQC5maXPCTCtN9vbXkjAgIl2/d3441e0dfde982ce5847c722ab3
 5. Circuit Breaker
 6. Gateway / Ingress
 
+## Saga (Pub / Sub)
+![image](https://user-images.githubusercontent.com/51141885/203246459-4a0b0b3f-c7f2-4f3c-9c3f-4f684f974a93.png)
+![image](https://user-images.githubusercontent.com/51141885/203246709-db78cce0-e1e0-4403-b104-72fc1bd5af4f.png)
+![image](https://user-images.githubusercontent.com/51141885/203246860-8654c8a3-7826-453c-9046-8aaf2754e657.png)
+
+## CQRS
+
+
 ## Before Running Services
 ### Make sure there is a Kafka server running
 ```
