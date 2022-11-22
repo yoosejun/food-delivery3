@@ -17,6 +17,8 @@
 - 고객이 요리를 배달 받으면 배송확인 버튼을 탭하여, 모든 거래가 완료된다.
 ## Model
 www.msaez.io/#/storming/Q8eftQC5maXPCTCtN9vbXkjAgIl2/d3441e0dfde982ce5847c722ab3a2f82
+![image](https://user-images.githubusercontent.com/51141885/203244696-5ff50100-b8fa-4fb5-83e5-af423cd03084.png)
+
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
