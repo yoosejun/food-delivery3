@@ -8,6 +8,6 @@ import lombok.Data;
 @Data
 public class AcceptCommand {
 
- 
+   private String courier;
 
 }
