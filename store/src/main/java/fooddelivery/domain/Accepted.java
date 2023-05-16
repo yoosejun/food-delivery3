@@ -1,4 +1,4 @@
-package fooddelivery.domain; 
+package fooddelivery.domain;
 
 import fooddelivery.domain.*;
 import fooddelivery.infra.AbstractEvent;
