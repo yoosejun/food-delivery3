@@ -1,7 +1,7 @@
 /target/
 /bin/
 /.settings/
-*#
+*# 
 *.iml
 *.ipr
 *.iws
