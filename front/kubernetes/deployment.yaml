@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: front
-          image: username/front:latest
+          image: sejunyoo/front:v1
           ports:
             - containerPort: 8080
           readinessProbe:
